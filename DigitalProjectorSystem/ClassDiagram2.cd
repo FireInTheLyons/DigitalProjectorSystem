@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalProjectorSystem.DATABASE_ENGINE.SQLiteHelper">
+    <Position X="5.5" Y="5.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAEAAAAAAAAAABAAAAEAAgAEAAAABAQAAAAAAAAA=</HashCode>
+      <FileName>DATABASE ENGINE\SQLiteHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.FILMS.ADD_FILM.IMPLEMENTATION.AddFilmModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAEAAAAAAAAAAAAQgAAAAAAA=</HashCode>
+      <FileName>FILMS\ADD FILM\IMPLEMENTATION\AddFilmModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalProjectorSystem.FILMS.ADD_FILM.IMPLEMENTATION.AddFilmPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAgAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>FILMS\ADD FILM\IMPLEMENTATION\AddFilmPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalProjectorSystem.FILMS.ADD_FILM.IMPLEMENTATION.AddFilmUI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAEAAEACAAQAFgAASAAAAKRBENAAQEIAKAAAAAAQg=</HashCode>
+      <FileName>FILMS\ADD FILM\IMPLEMENTATION\AddFilmUI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalProjectorSystem.FILMS.MODIFY_FILM.IMPLEMENTATION.ModifyFilmModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAgIAAAAAA=</HashCode>
+      <FileName>FILMS\MODIFY FILM\IMPLEMENTATION\ModifyFilmModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalProjectorSystem.FILMS.MODIFY_FILM.IMPLEMENTATION.ModifyFilmPresenter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAACAAIAAAAAA=</HashCode>
+      <FileName>FILMS\MODIFY FILM\IMPLEMENTATION\ModifyFilmPresenter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalProjectorSystem.FILMS.MODIFY_FILM.IMPLEMENTATION.ModifyFilmUI" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAAAEAWAAAAFkAISAAAACUACMgAAAYQIAAAABAQA=</HashCode>
+      <FileName>FILMS\MODIFY FILM\IMPLEMENTATION\ModifyFilmUI.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="DigitalProjectorSystem.Program" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.ToConsole" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ToConsole.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.Films" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAKABAABAAECBAAACAAAEAAAAAABQAAAIAgA=</HashCode>
+      <FileName>UI_MENUS_WFA\Films.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.wdwMainMenu" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABCAAAAABAACAAAACAEAAAAAAAAgABAEAAAA=</HashCode>
+      <FileName>UI_MENUS_WFA\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.Projectors" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAAECAAAACAAAAAAAAAAAAAAAAACg=</HashCode>
+      <FileName>UI_MENUS_WFA\Projectors.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.Shows" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAAECACAIiAAAhAAAAAECEBAAQAAA=</HashCode>
+      <FileName>UI_MENUS_WFA\Shows.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.Trailers" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIKEAAABAAECAAAACAAIAAAAAAAEAQAAIAAA=</HashCode>
+      <FileName>UI_MENUS_WFA\Trailers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.TRAILERS.ADD_TRAILER.IMPLEMENTATION.AddTrailerModel" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TRAILERS\ADD TRAILER\IMPLEMENTATION\AddTrailerModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalProjectorSystem.TRAILERS.ADD_TRAILER.IMPLEMENTATION.AddTrailerPresenter" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TRAILERS\ADD TRAILER\IMPLEMENTATION\AddTrailerPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DigitalProjectorSystem.FILMS.ADD_FILM.INTERFACES.IAddFilmModel" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FILMS\ADD FILM\INTERFACES\IAddFilmModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DigitalProjectorSystem.FILMS.ADD_FILM.INTERFACES.IAddFilmPresenter" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FILMS\ADD FILM\INTERFACES\IAddFilmPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DigitalProjectorSystem.FILMS.ADD_FILM.INTERFACES.IAddFilmUI" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAQAAAAAAAAMAAAAAAIAAAAAAQA=</HashCode>
+      <FileName>FILMS\ADD FILM\INTERFACES\IAddFilmUI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DigitalProjectorSystem.FILMS.MODIFY_FILM.INTERFACES.IModifyFilmModel" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>FILMS\MODIFY FILM\INTERFACES\IModifyFilmModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DigitalProjectorSystem.FILMS.MODIFY_FILM.INTERFACES.IModifyFilmPresenter" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>FILMS\MODIFY FILM\INTERFACES\IModifyFilmPresenter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="DigitalProjectorSystem.FILMS.MODIFY_FILM.INTERFACES.IModifyFilmUI" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAQAAAAAAAAMAAAAAAIAAAAAAQA=</HashCode>
+      <FileName>FILMS\MODIFY FILM\INTERFACES\IModifyFilmUI.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

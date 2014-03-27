@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9775C6AB-5209-450A-A22A-4A7F98EA1652}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalProjectorSystem</RootNamespace>
+    <AssemblyName>DigitalProjectorSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.1.0.91.3\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6">
+      <HintPath>..\packages\System.Data.SQLite.1.0.91.3\lib\net45\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq">
+      <HintPath>..\packages\System.Data.SQLite.1.0.91.3\lib\net45\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DATABASE ENGINE\SQLiteHelper.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\IMPLEMENTATION\AddFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\IMPLEMENTATION\AddFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\IMPLEMENTATION\AddFilmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\IMPLEMENTATION\AddFilmUI.Designer.cs">
+      <DependentUpon>AddFilmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\INTERFACES\IAddFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\INTERFACES\IAddFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\ADD FILM\INTERFACES\IAddFilmUI.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\IMPLEMENTATION\BrowseFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\IMPLEMENTATION\BrowseFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\IMPLEMENTATION\BrowseFilmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\IMPLEMENTATION\BrowseFilmUI.Designer.cs">
+      <DependentUpon>BrowseFilmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\INTERFACES\IBrowseFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\INTERFACES\IBrowseFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\BROWSE FILMS\INTERFACES\IBrowseFilmUI.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\IMPLEMENTATION\ModifyFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\IMPLEMENTATION\ModifyFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\IMPLEMENTATION\ModifyFilmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\IMPLEMENTATION\ModifyFilmUI.Designer.cs">
+      <DependentUpon>ModifyFilmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\INTERFACES\IModifyFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\INTERFACES\IModifyFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\MODIFY FILM\INTERFACES\IModifyFilmUI.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\IMPLEMENTATION\RemoveFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\IMPLEMENTATION\RemoveFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\IMPLEMENTATION\RemoveFilmUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\IMPLEMENTATION\RemoveFilmUI.Designer.cs">
+      <DependentUpon>RemoveFilmUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\INTERFACES\IRemoveFilmModel.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\INTERFACES\IRemoveFilmPresenter.cs" />
+    <Compile Include="FILMS -- %28remove film left%29\REMOVE FILM -- %28must edit%29\INTERFACES\IRemoveFilmUI.cs" />
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\IMPLEMENTATION\BrowseShowsModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\IMPLEMENTATION\BrowseShowsPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\IMPLEMENTATION\BrowseShowsUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\IMPLEMENTATION\BrowseShowsUI.Designer.cs">
+      <DependentUpon>BrowseShowsUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\INTERFACES\BrowseShowsModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\INTERFACES\BrowseShowsPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\BROWSE SHOWS\INTERFACES\BrowseShowsUI.cs" />
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\IMPLEMENTATION\CreateShowModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\IMPLEMENTATION\CreateShowPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\IMPLEMENTATION\CreateShowUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\IMPLEMENTATION\CreateShowUI.Designer.cs">
+      <DependentUpon>CreateShowUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\INTERFACES\ICreateShowModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\INTERFACES\ICreateShowPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\CREATE SHOW\INTERFACES\ICreateShowUI.cs" />
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\IMPLEMENTATION\ModifyShowModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\IMPLEMENTATION\ModifyShowPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\IMPLEMENTATION\ModifyShowUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\IMPLEMENTATION\ModifyShowUI.Designer.cs">
+      <DependentUpon>ModifyShowUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\INTERFACES\IModifyShowPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\INTERFACES\IModifyShowModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\MODIFY SHOW\INTERFACES\IModifyShowUI.cs" />
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\IMPLEMENTATION\RemoveShowModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\IMPLEMENTATION\RemoveShowPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\IMPLEMENTATION\RemoveShowUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\IMPLEMENTATION\RemoveShowUI.Designer.cs">
+      <DependentUpon>RemoveShowUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\INTERFACES\IRemoveShowModel.cs" />
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\INTERFACES\IRemoveShowPresenter.cs" />
+    <Compile Include="SHOWS -- %28next week%29\REMOVE SHOW\INTERFACES\IRemoveShowUI.cs" />
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\IMPLEMENTATION\AddTrailerModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\IMPLEMENTATION\AddTrailerPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\IMPLEMENTATION\AddTrailerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\IMPLEMENTATION\AddTrailerUI.Designer.cs">
+      <DependentUpon>AddTrailerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\INTERFACES\IAddTrailerModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\INTERFACES\IAddTrailerPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\ADD TRAILER\INTERFACES\IAddTrailerUI.cs" />
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\IMPLEMENTATION\BrowseTrailersModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\IMPLEMENTATION\BrowseTrailersPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\IMPLEMENTATION\BrowseTrailersUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\IMPLEMENTATION\BrowseTrailersUI.Designer.cs">
+      <DependentUpon>BrowseTrailersUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\INTERFACES\IBrowseTrailersModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\INTERFACES\IBrowseTrailersPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\BROWSE TRAILERS\INTERFACES\IBrowseTrailersUI.cs" />
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\IMPLEMENTATION\ModifyTrailerModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\IMPLEMENTATION\ModifyTrailerPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\IMPLEMENTATION\ModifyTrailerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\IMPLEMENTATION\ModifyTrailerUI.Designer.cs">
+      <DependentUpon>ModifyTrailerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\INTERFACES\IModifyTrailerModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\INTERFACES\IModifyTrailerPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\MODIFY TRAILER\INTERFACES\IModifyTrailerUI.cs" />
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\IMPLEMENTATION\RemoveTrailerModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\IMPLEMENTATION\RemoveTrailerPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\IMPLEMENTATION\RemoveTrailerUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\IMPLEMENTATION\RemoveTrailerUI.Designer.cs">
+      <DependentUpon>RemoveTrailerUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\INTERFACES\IRemoveTrailerModel.cs" />
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\INTERFACES\IRemoveTrailerPresenter.cs" />
+    <Compile Include="TRAILERS -- %28next%29\REMOVE TRAILER\INTERFACES\IRemoveTrailerUI.cs" />
+    <Compile Include="UI_MENUS_WFA\Films.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Films.Designer.cs">
+      <DependentUpon>Films.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Projectors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Projectors.Designer.cs">
+      <DependentUpon>Projectors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Trailers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Trailers.Designer.cs">
+      <DependentUpon>Trailers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Shows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI_MENUS_WFA\Shows.Designer.cs">
+      <DependentUpon>Shows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ToConsole.cs" />
+    <EmbeddedResource Include="FILMS -- %28remove film left%29\ADD FILM\IMPLEMENTATION\AddFilmUI.resx">
+      <DependentUpon>AddFilmUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FILMS -- %28remove film left%29\BROWSE FILMS\IMPLEMENTATION\BrowseFilmUI.resx">
+      <DependentUpon>BrowseFilmUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FILMS -- %28remove film left%29\MODIFY FILM\IMPLEMENTATION\ModifyFilmUI.resx">
+      <DependentUpon>ModifyFilmUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SHOWS -- %28next week%29\CREATE SHOW\IMPLEMENTATION\CreateShowUI.resx">
+      <DependentUpon>CreateShowUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRAILERS -- %28next%29\ADD TRAILER\IMPLEMENTATION\AddTrailerUI.resx">
+      <DependentUpon>AddTrailerUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRAILERS -- %28next%29\BROWSE TRAILERS\IMPLEMENTATION\BrowseTrailersUI.resx">
+      <DependentUpon>BrowseTrailersUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TRAILERS -- %28next%29\MODIFY TRAILER\IMPLEMENTATION\ModifyTrailerUI.resx">
+      <DependentUpon>ModifyTrailerUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_MENUS_WFA\Films.resx">
+      <DependentUpon>Films.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_MENUS_WFA\Projectors.resx">
+      <DependentUpon>Projectors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_MENUS_WFA\Shows.resx">
+      <DependentUpon>Shows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI_MENUS_WFA\MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI_MENUS_WFA\Trailers.resx">
+      <DependentUpon>Trailers.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PROJECTORS\ADD PROJECTOR\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
